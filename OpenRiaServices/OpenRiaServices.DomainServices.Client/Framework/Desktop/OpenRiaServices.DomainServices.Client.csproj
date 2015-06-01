@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- All feature packages define a property for their root and include a common targets file to set common properties -->
+  <PropertyGroup>
+    <FeaturePackageRoot>$(MSBuildProjectDirectory)\..\..\..</FeaturePackageRoot>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MyGet|AnyCPU'">
+    <OutputPath>bin\MyGet\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\bin\MyGet\Desktop\OpenRiaServices.DomainServices.Client.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugNet40|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugNet40\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\bin\DebugNet40\Desktop\OpenRiaServices.DomainServices.Client.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseNet40|AnyCPU'">
+    <OutputPath>bin\ReleaseNet40\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\bin\ReleaseNet40\Desktop\OpenRiaServices.DomainServices.Client.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MyGet40|AnyCPU'">
+    <OutputPath>bin\MyGet40\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\bin\MyGet40\Desktop\OpenRiaServices.DomainServices.Client.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Signed|AnyCPU'">
+    <OutputPath>..\..\bin\Signed\</OutputPath>
+    <DefineConstants>TRACE;SIGNED</DefineConstants>
+    <DocumentationFile>..\..\..\bin\Release\Desktop\OpenRiaServices.DomainServices.Client.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AssemblyOriginatorKeyFile>..\..\..\snk\OpenRiaServices.snk</AssemblyOriginatorKeyFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+ 
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20826</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3F4FBBD2-A634-44C7-9DEF-D71F349E706C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenRiaServices.DomainServices.Client</RootNamespace>
+    <AssemblyName>OpenRiaServices.DomainServices.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputPath>..\..\..\bin\$(Configuration)\Desktop\</OutputPath>
+    <DocumentationFile>..\..\..\bin\$(Configuration)\Desktop\OpenRiaServices.DomainServices.Client.XML</DocumentationFile>
+    <WarningLevel>4</WarningLevel>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\bin\Debug\Desktop\OpenRiaServices.DomainServices.Client.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\bin\Release\Desktop\OpenRiaServices.DomainServices.Client.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.XML" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Silverlight\ApplicationServices\AuthenticationEventArgs.cs">
+      <Link>ApplicationServices\AuthenticationEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\ApplicationServices\AuthenticationOperation.cs">
+      <Link>ApplicationServices\AuthenticationOperation.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\ApplicationServices\AuthenticationResult.cs">
+      <Link>ApplicationServices\AuthenticationResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\ApplicationServices\LoadUserOperation.cs">
+      <Link>ApplicationServices\LoadUserOperation.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\ApplicationServices\LoadUserResult.cs">
+      <Link>ApplicationServices\LoadUserResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\ApplicationServices\LoginOperation.cs">
+      <Link>ApplicationServices\LoginOperation.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\ApplicationServices\LoginResult.cs">
+      <Link>ApplicationServices\LoginResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\ApplicationServices\LogoutOperation.cs">
+      <Link>ApplicationServices\LogoutOperation.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\ApplicationServices\LogoutResult.cs">
+      <Link>ApplicationServices\LogoutResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\ApplicationServices\SaveUserOperation.cs">
+      <Link>ApplicationServices\SaveUserOperation.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\ApplicationServices\SaveUserResult.cs">
+      <Link>ApplicationServices\SaveUserResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\ApplicationServices\LoginParameters.cs">
+      <Link>ApplicationServices\LoginParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\ApplicationServices\AuthenticationService.cs">
+      <Link>ApplicationServices\AuthenticationService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\OpenRiaServices.Data.DomainServices\Framework\EntityList.cs">
+      <Link>Data\EntityList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\OpenRiaServices.Data.DomainServices\Framework\QueryBuilder.cs">
+      <Link>Data\QueryBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\OpenRiaServices.DomainServices.Server\Framework\Data\CompositionAttribute.cs">
+      <Link>Data\CompositionAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\AsyncResultBase.cs">
+      <Link>AsyncResultBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\BinaryTypeUtility.cs">
+      <Link>Data\BinaryTypeUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\ComplexObject.cs">
+      <Link>Data\ComplexObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntityActionAttribute.cs">
+      <Link>Data\EntityActionAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\DomainClient.cs">
+      <Link>Data\DomainClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\DomainClientAsyncResult.cs">
+      <Link>Data\DomainClientAsyncResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\DomainClientResult.cs">
+      <Link>Data\DomainClientResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\DomainContext.cs">
+      <Link>Data\DomainContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\DomainIdentifierAttribute.cs">
+      <Link>Data\DomainIdentifierAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\DomainException.cs">
+      <Link>Data\DomainException.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntityAction.cs">
+      <Link>Data\EntityAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntityCollectionChangedEventArgs.cs">
+      <Link>Data\EntityCollectionChangedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\DomainOperationException.cs">
+      <Link>Data\DomainOperationException.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntityOperationType.cs">
+      <Link>Data\EntityOperationType.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntityQuery.cs">
+      <Link>Data\EntityQuery.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntityQueryable.cs">
+      <Link>Data\EntityQueryable.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntitySet.cs">
+      <Link>Data\EntitySet.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntitySetOperations.cs">
+      <Link>Data\EntitySetOperations.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\MergeAttribute.cs">
+      <Link>Data\MergeAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\InvokeResult.cs">
+      <Link>Data\InvokeResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\LoadResult.cs">
+      <Link>Data\LoadResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\Serialization\KeyValue.cs">
+      <Link>Data\Serialization\KeyValue.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\SubmitOperationException.cs">
+      <Link>Data\SubmitOperationException.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\SubmitResult.cs">
+      <Link>Data\SubmitResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\ObjectStateUtility.cs">
+      <Link>Data\ObjectStateUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\ValidationResultCollection.cs">
+      <Link>Data\EntityValidationResultCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntityVisitor.cs">
+      <Link>Data\EntityVisitor.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\ExternalReferenceAttribute.cs">
+      <Link>Data\ExternalAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\InvokeArgs.cs">
+      <Link>Data\InvokeArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\InvokeCompletedResult.cs">
+      <Link>Data\InvokeCompletedResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\InvokeOperation.cs">
+      <Link>Data\InvokeOperation.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\LoadOperation.cs">
+      <Link>Data\LoadOperation.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\MetaType.cs">
+      <Link>Data\MetaType.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\QueryCompletedResult.cs">
+      <Link>Data\QueryCompletedResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\QueryResult.cs">
+      <Link>Data\QueryResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\RoundtripOriginalAttribute.cs">
+      <Link>Data\RoundtripOriginalAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\SubmitCompletedResult.cs">
+      <Link>Data\SubmitCompletedResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\SubmitOperation.cs">
+      <Link>Data\SubmitOperation.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\TypeUtility.cs">
+      <Link>Data\TypeUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\ValidationUtilities.cs">
+      <Link>Data\ValidationUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\ExceptionHandlingUtility.cs">
+      <Link>Data\ExceptionHandlingUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\ChangeSetBuilder.cs">
+      <Link>Data\ChangeSetBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\Entity.cs">
+      <Link>Data\Entity.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntityChangeSet.cs">
+      <Link>Data\EntityChangeSet.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntityCollection.cs">
+      <Link>Data\EntityCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntityConflict.cs">
+      <Link>Data\EntityConflict.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntityContainer.cs">
+      <Link>Data\EntityContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntityKey.cs">
+      <Link>Data\EntityKey.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\ChangeSetEntry.cs">
+      <Link>Data\ChangeSetEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntityRef.cs">
+      <Link>Data\EntityRef.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\EntityState.cs">
+      <Link>Data\EntityState.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\LoadBehavior.cs">
+      <Link>Data\MergeOption.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\ValidationResultInfo.cs">
+      <Link>Data\ValidationResultInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\OperationErrorStatus.cs">
+      <Link>Data\OperationErrorStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Data\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+      <Link>Data\Resource.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\HasSideEffectsAttribute.cs">
+      <Link>HasSideEffectsAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\OperationBase.cs">
+      <Link>OperationBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\GlobalSuppressions.cs" Condition=" '$(RunCodeAnalysis)' == 'true' ">
+      <Link>GlobalSuppressions.cs</Link>
+    </Compile>
+    <Compile Include="..\Silverlight\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="..\Silverlight\WeakCollectionChangedListener.cs">
+      <Link>WeakCollectionChangedListener.cs</Link>
+    </Compile>
+    <Compile Include="Linq\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\Silverlight\Data\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OpenRiaServices.DomainServices.Client</CustomToolNamespace>
+      <Link>Data\Resource.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Silverlight\Resources.resx">
+      <Link>Resources.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Linq\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OpenRiaServices.DomainServices.Client.Services</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Condition="Exists('$(FeaturePackageInfrastructure)\bin\AutomaticAssemblyFileVersion.targets')" Project="$(FeaturePackageInfrastructure)\bin\AutomaticAssemblyFileVersion.targets" />
+</Project>

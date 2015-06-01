@@ -1,0 +1,58 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>空气数据API</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="免费提供国内空气质量数据.">
+    <meta name="keywords" content="空气数据接口,空气API,空气接口,空气质量">
+    @*<script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.js"></script>*@
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-responsive.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <script src="~/Scripts/jquery-1.9.1.intellisense.js"></script>
+    <script src="~/Scripts/bootstrap.js" ></script>
+</head>
+<body>
+    <h1>提供国内空气数据API</h1>
+
+    <section title="数据说明">
+        <h2>数据说明</h2>
+        <ul>
+            <li>数据来源于国家检测点</li>
+            <li>通常一个小时更新一次</li>
+            <li>AQI计算标准:HJ633-2012</li>
+        </ul>
+    </section>
+    <section title="token的获取">
+        <h2>token的获取</h2>
+        <p>Email:yi##hzexe.com 请在邮件中描述使用者性质，产品描述,联系方式.<br />Note:未必申请就会通过，通常最慢三天审核，未通过不一一通知。</p>
+        <p>为方便测试，test123可作为测试用的token，请不要在产品中使用</p>
+    </section>
+    <section title="API文档">
+        <h2>API文档/帮助</h2>
+        <ul>
+            <li><a href="Help/">空气API文档</a></li>
+            <li>QQ群：276596753</li>
+        </ul>
+            
+</section>
+    <div>
+
+        <section title="使用限制">
+            <h2>使用限制</h2>
+            <ul>
+                <li>每个IP限制两个连接。注意关闭请求后的http连接</li>
+                <li>当前未对每个用户做访问次数的限制，对于访问特别频繁的，会邮件通知改进；存在大量貌似恶意访问的，会立刻停止相应token的使用</li>
+                <li>没有了</li>
+            </ul>
+        </section>
+        <div>
+
+        </div>
+</body>
+</html>

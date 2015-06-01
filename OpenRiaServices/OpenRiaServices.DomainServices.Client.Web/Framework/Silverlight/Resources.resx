@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationServices_CannotInitializeDomainContext" xml:space="preserve">
+    <value>The DomainContextType is null or invalid and there are no contexts generated from AuthenticationBase&lt;T&gt;.</value>
+  </data>
+  <data name="ApplicationServices_CannotInitializeUser" xml:space="preserve">
+    <value>The User type must extend UserBase and provide a default constructor.</value>
+  </data>
+  <data name="ApplicationServices_CannotSaveAnonymous" xml:space="preserve">
+    <value>The current user is anonymous. Data may only be saved for authenticated users.</value>
+  </data>
+  <data name="ApplicationServices_LoadNoUser" xml:space="preserve">
+    <value>GetUser should have returned a single user.</value>
+  </data>
+  <data name="ApplicationServices_LogoutNoUser" xml:space="preserve">
+    <value>Logout should have returned a single, anonymous user.</value>
+  </data>
+  <data name="ApplicationServices_NoLoadUserMethod" xml:space="preserve">
+    <value>Derived service does not contain a LoadUser method.</value>
+  </data>
+  <data name="ApplicationServices_SaveErrors" xml:space="preserve">
+    <value>Errors occurred while submitting the user changes.</value>
+  </data>
+  <data name="ApplicationServices_ServiceMustNotBeActive" xml:space="preserve">
+    <value>The service must be inactive to update state.</value>
+  </data>
+  <data name="ApplicationServices_WANoLogin" xml:space="preserve">
+    <value>Windows authentication does not support logging in.</value>
+  </data>
+  <data name="ApplicationServices_WANoLogout" xml:space="preserve">
+    <value>Windows authentication does not support logging out.</value>
+  </data>
+  <data name="MethodCanOnlyBeInvokedOnce" xml:space="preserve">
+    <value>Method can only be invoked once.</value>
+  </data>
+  <data name="OperationCancelled" xml:space="preserve">
+    <value>The operation was canceled.</value>
+  </data>
+  <data name="OperationNotComplete" xml:space="preserve">
+    <value>The operation has not completed.</value>
+  </data>
+  <data name="QuerySerialization_BitwiseOperatorsNotSupported" xml:space="preserve">
+    <value>Bitwise operators are not supported in queries.</value>
+  </data>
+  <data name="QuerySerialization_MethodNotAccessible" xml:space="preserve">
+    <value>Method '{0}' on type '{1}' is not accessible. Only methods on primitive types, System.Math and System.Convert are supported in queries.</value>
+  </data>
+  <data name="QuerySerialization_NestedQueriesNotSupported" xml:space="preserve">
+    <value>Nested query expressions are not supported.</value>
+  </data>
+  <data name="QuerySerialization_NewExpressionsNotSupported" xml:space="preserve">
+    <value>'New' Expressions are not supported in queries.</value>
+  </data>
+  <data name="QuerySerialization_ProjectionsNotSupported" xml:space="preserve">
+    <value>Select projections are not supported.</value>
+  </data>
+  <data name="QuerySerialization_UnsupportedBinaryOp" xml:space="preserve">
+    <value>Binary operation '{0}' is not supported.</value>
+  </data>
+  <data name="QuerySerialization_UnsupportedQueryOperator" xml:space="preserve">
+    <value>Query operator '{0}' is not supported.</value>
+  </data>
+  <data name="QuerySerialization_UnsupportedType" xml:space="preserve">
+    <value>Value of type '{0}' cannot be serialized as part of the query. '{0}' is not a supported type.</value>
+  </data>
+  <data name="QuerySerialization_UnsupportedUnaryOp" xml:space="preserve">
+    <value>Unary operation '{0}' is not supported.</value>
+  </data>
+  <data name="WebContext_AuthenticationNotSet" xml:space="preserve">
+    <value>WebContextBase.Authentication has not been initialized. This member is only supported in valid implementations.</value>
+  </data>
+  <data name="WebContext_CannotModifyAuthentication" xml:space="preserve">
+    <value>Authentication cannot be set after the Application.Startup event has occurred.</value>
+  </data>
+  <data name="WebContext_NoContexts" xml:space="preserve">
+    <value>The current instance of WebContext is not available.  You must instantiate a WebContext and add it to Application.ApplicationLifetimeObjects within the default App constructor.</value>
+  </data>
+  <data name="WebContext_OnlyOne" xml:space="preserve">
+    <value>Only one WebContextBase can be created per application.</value>
+  </data>
+  <data name="WrongAsyncResult" xml:space="preserve">
+    <value>IAsyncResult object did not come from the corresponding async method on this Type.</value>
+  </data>
+</root>

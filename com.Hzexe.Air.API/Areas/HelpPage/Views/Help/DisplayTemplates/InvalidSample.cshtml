@@ -1,0 +1,13 @@
+﻿@using com.Hzexe.Air.API.Areas.HelpPage
+@model InvalidSample
+
+@if (HttpContext.Current.IsDebuggingEnabled)
+{
+    <div class="warning-message-container">
+        <p>@Model.ErrorMessage</p>
+    </div>
+}
+else
+{
+    <p>无例子.</p>
+}
