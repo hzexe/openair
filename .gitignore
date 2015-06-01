@@ -1,32 +1,28 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+[Oo]bj
+[Bb]in
+packages
+PublishProfiles
+*.csproj.user
+*ReSharper*
+*resharper*
+*.suo
+*.cache
+* Thumbs.db
 
-# Precompiled Headers
-*.gch
-*.pch
+# Other useful stuff
+*.bak
+*.cache
+*.log
+*.swp
+*.user
+_compareTemp
+_notes
+aspnet_client
+httpd.parse.errors
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Office Temp Files
+~$*
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
+# If you have a deploy folder
+deploy
+deploy/*
