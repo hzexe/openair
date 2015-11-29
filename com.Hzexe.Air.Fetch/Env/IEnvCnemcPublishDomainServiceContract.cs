@@ -202,7 +202,7 @@ namespace com.Hzexe.Air.Env.ContractLocal
         /// </summary>
         /// <remarks></remarks>
          public ClientContext()
-            : this(new WebDomainClient<IEnvCnemcPublishDomainServiceContract>(new Uri("http://113.108.142.147:20035/emcpublish/ClientBin/Env-CnemcPublish-RiaServices-EnvCnemcPublishDomainService.svc")))
+            : this(new WebDomainClient<IEnvCnemcPublishDomainServiceContract>(new Uri("http://106.37.208.233:20035/ClientBin/Env-CnemcPublish-RiaServices-EnvCnemcPublishDomainService.svc")))
         {
            
         }
