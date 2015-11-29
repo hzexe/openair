@@ -40,6 +40,12 @@
        providerName="System.Data.SqlClient"/>
   </connectionStrings>
 ```
+注意事项
+-----------------------------------
+1.com.Hzexe.Air.Fetch工程会初始化数据库，因此，连接数据库的用户的权限至少要有create\drop database、table的权限，其它项目如com.Hzexe.Air.API只是读取这个数据库里的数据;<br />
+2.可使用的数据库类型不限于localdb，在mysql,localdb,sqlserver测试通过，使用其它数据库需除了更改上面提到的数据连接文件，还需要在app.config或web.config添加相应数据库在entity framework相关节点的驱动，并且把驱动程序集放在程序的执行目录。<br />
+3.有问题请发Issues，尚未提供其它途径的技术支持<br />
+
 其它
 -----------------------------------
 在线演示<br />
