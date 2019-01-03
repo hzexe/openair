@@ -5,7 +5,7 @@
 
 |Package|Branch|Build|
 |:-----:|:----:|:---:|
-| [NuGet ![NuGet Release](https://img.shields.io/nuget/vpre/OpenAirLibrary.svg?label=OpenAirLibrary&maxAge=3600)](https://www.nuget.org/packages/Telegram.Bot/) | `master` | [![Build status](https://hzexe.visualstudio.com/openair/_apis/build/status/openair-.NET%20Desktop-CI?branchName=master)](https://hzexe.visualstudio.com/openair/_build/latest?definitionId=2) |
+| [NuGet ![NuGet Release](https://img.shields.io/nuget/vpre/OpenAirLibrary.svg?label=OpenAirLibrary&maxAge=3600)](https://www.nuget.org/packages/OpenAirLibrary/) | `master` | [![Build status](https://hzexe.visualstudio.com/openair/_apis/build/status/openair-.NET%20Desktop-CI?branchName=master)](https://hzexe.visualstudio.com/openair/_build/latest?definitionId=2) |
 
 ### 功能
 
