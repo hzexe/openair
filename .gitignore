@@ -26,3 +26,7 @@ httpd.parse.errors
 # If you have a deploy folder
 deploy
 deploy/*
+
+
+/.vs
+TestResults

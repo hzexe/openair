@@ -7,8 +7,8 @@
     <ProjectGuid>{E0F910D5-0BED-4351-9475-7E5145AE0025}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>fetchtest</RootNamespace>
-    <AssemblyName>fetchtest</AssemblyName>
+    <RootNamespace>Example</RootNamespace>
+    <AssemblyName>Example</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
@@ -36,18 +36,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    <Reference Include="OpenRiaServices.DomainServices.Client, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenRiaServices.Client.Core.4.5.3\lib\net45\OpenRiaServices.DomainServices.Client.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Data">
-      <HintPath>..\packages\MySql.Data.6.9.6\lib\net45\MySql.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Data.Entity.EF6">
-      <HintPath>..\packages\MySql.Data.Entity.6.9.6\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    <Reference Include="OpenRiaServices.DomainServices.Client.Web, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenRiaServices.Client.Core.4.5.3\lib\net45\OpenRiaServices.DomainServices.Client.Web.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -62,15 +55,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\com.Hzexe.Air.Fetch\com.Hzexe.Air.Fetch.csproj">
-      <Project>{aeaf21cc-8832-417f-952b-7edb0cc49d16}</Project>
-      <Name>com.Hzexe.Air.Fetch</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\com.Hzexe.Air.Fetch\App.config">
-      <Link>App.config</Link>
-    </None>
+    <ProjectReference Include="..\src\Com.Hzexe.Air.OpenAirLibrary\Com.Hzexe.Air.OpenAirLibrary.csproj">
+      <Project>{c427da74-0efa-4708-887d-ae54708a3f28}</Project>
+      <Name>Com.Hzexe.Air.OpenAirLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

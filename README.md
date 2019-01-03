@@ -1,6 +1,8 @@
 # openair
 开源的国家空气数据获取客户端
 =================================
+[![Build status](https://hzexe.visualstudio.com/openair/_apis/build/status/openair-.NET%20Desktop-CI)](https://hzexe.visualstudio.com/openair/_build/latest?definitionId=2)
+
 作用
 --------------------------------
 本项目可以获取[中国环境检测总站的空气数据](http://113.108.142.147:20035/emcpublish/),也包含restful的数据分发服务<br />

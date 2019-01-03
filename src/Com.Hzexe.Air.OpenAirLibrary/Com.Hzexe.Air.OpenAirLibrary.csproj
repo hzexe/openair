@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <Title>开源的国家空气数据获取客户端</Title>
+    <Version>0.1</Version>
+    <AssemblyVersion>0.1.*</AssemblyVersion>
+    <PackageId>OpenAirLibrary</PackageId>
+    <Authors>Hzexe</Authors>
+    <Company />
+    <Product>OpenAirLibrary</Product>
+    <Description>开源的国家空气数据获取库可以获取指定城市，指定检测站即时空气数据，以及历史数据</Description>
+    <PackageTags>国家空气数据,空气质量,检测点,AQI,OpenAirLib,检测站</PackageTags>
+    <PackageProjectUrl>https://github.com/hzexe/openair</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/hzexe/openair</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Apache License 2.0</Copyright>
+    <Deterministic>False</Deterministic>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>bin/$(Configuration)/$(TargetFramework)/$(AssemblyName).xml</DocumentationFile>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/hzexe/openair/master/LICENSE</PackageLicenseUrl>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ICSharpCode.SharpZipLib.Patched" Version="0.86.5.1" />
+    <PackageReference Include="OpenRiaServices.Client.Core" Version="4.5.3" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.ComponentModel.Annotations" />
+  </ItemGroup>
+</Project>
