@@ -105,7 +105,7 @@ namespace Example
             //创建查询杭州的其中一个检测站
             var station_qiandaohu = stations
                 .Where(x => hangzhou.CityCode == x.CityCode)  //杭州的筛选
-                .Where(x => x.PositionName == "千岛湖")         //名叫千岛湖
+                //.Where(x => x.PositionName == "千岛湖")         //名叫千岛湖   千岛湖检测站名称已找不到,所以按名字排序随便找一个检测站
                 .First();
 
             DateTime startTime = DateTime.Today.AddDays(-2);
